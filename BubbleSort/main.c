@@ -11,9 +11,9 @@
 void bubbleSort(int* array, int length, _Bool betterFlag);
 void logArray(int* toSortArray, int length);
 int main(int argc, const char * argv[]) {
-//    int toSortArray[10] = {3, 6, 8, 2, 1, 0, 9, 4, 7, 5};
+    //    int toSortArray[10] = {3, 6, 8, 2, 1, 0, 9, 4, 7, 5};
     int toSortArray[10] = {13, 6, 38, 22, 81, 170, 29, 34, 167, 135};
-// int toSortArray[10] = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0 };
+    // int toSortArray[10] = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0 };
     int lengthOfArray = sizeof(toSortArray)/sizeof(int);
     logArray(toSortArray, lengthOfArray);
     bubbleSort(toSortArray, lengthOfArray, true);
@@ -68,4 +68,4 @@ void bubbleSort(int* array, int length, _Bool betterFlag) {
         logArray(array, length);
     }
     printf("totalexchangeCount:%d\n", totalExchangeCount);
-    }
+}
